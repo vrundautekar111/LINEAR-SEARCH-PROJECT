@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Search Visualizer</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <p class="tag">DATA STRUCTURES & ALGORITHMS</p>
+            <h1>Linear Search Visualizer</h1>
+            <p>Explore how an algorithm searches through a list.</p>
+        </header>
+
+        <section class="panel">
+            <label for="numbers">Enter numbers (comma-separated)</label>
+            <input id="numbers" type="text"
+                   value="10, 25, 30, 45, 60"
+                   placeholder="10, 20, 30, 40">
+
+            <label for="target">Number to search</label>
+            <input id="target" type="number"
+                   value="45" placeholder="Enter target">
+
+            <button id="searchButton" onclick="startSearch()">
+                Search Now
+            </button>
+
+            <p id="message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Array Visualization</h2>
+            <div id="arrayDisplay" class="array"></div>
+            <div id="result" class="result" aria-live="polite">
+                Your search result will appear here.
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Search Steps</h2>
+            <ol id="steps"></ol>
+        </section>
+
+        <section class="stats">
+            <div class="stat">
+                <span>Comparisons</span>
+                <strong id="comparisons">0</strong>
+            </div>
+            <div class="stat">
+                <span>Target Index</span>
+                <strong id="index">—</strong>
+            </div>
+            <div class="stat">
+                <span>Time Complexity</span>
+                <strong>O(n)</strong>
+            </div>
+        </section>
+
+        <footer>
+            Built with Python, Flask, HTML, CSS and JavaScript.
+        </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
