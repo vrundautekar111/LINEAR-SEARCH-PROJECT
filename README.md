@@ -11,7 +11,7 @@ OBJECTIVES
 Understand the working of the Linear Search algorithm.
 Visualize the searching process step by step.
 Find the position of a target element in an array.
-Calculate the number of comparisons required.
+Calculate the number of comparisons required. 
 Learn algorithm time and space complexity.
 Provide an interactive and user-friendly interface for learning data structures and algorithms.
 
