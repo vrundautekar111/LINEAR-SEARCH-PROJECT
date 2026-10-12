@@ -8,7 +8,7 @@ The application highlights checked elements, identifies the target element when 
 
 OBJECTIVES
 
-Understand the working of the Linear Search algorithm.
+Understand the working of the Linear Search algorithm.   
 Visualize the searching process step by step.
 Find the position of a target element in an array.
 Calculate the number of comparisons required. 
